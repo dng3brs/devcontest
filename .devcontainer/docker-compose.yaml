@@ -1,6 +1,6 @@
 services:
   app:
-    image: mcr.microsoft.com/vscode/devcontainers/base:bookworm
+    build: .
     volumes:
       - ..:/src
     command: sleep infinity

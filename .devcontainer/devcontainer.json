@@ -5,8 +5,31 @@
   "service": "app",
   "workspaceFolder": "/src",
   "features": {
+    // see https://containers.dev/features.
     "ghcr.io/devcontainers/features/node:1": {
       "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11",
+      "installTools": true,
+      "toolsToInstall": "virtualenv"
+    },
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "jdkDistro": "ms",
+      "installGradle": false,
+      "gradleVersion": "latest",
+      "installMaven": true,
+      "mavenVersion": "latest"
+    },
+    "ghcr.io/devcontainers/features/rust:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest"
     }
   },
   "customizations": {
